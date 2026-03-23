@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Manna Bible Church - Likoni</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ✅ ALERT SECTION -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("status")) {
+        if (params.get("status") === "success") {
+          alert("✅ Your message has been sent successfully! Thank you for reaching out.");
+        } else if (params.get("status") === "error") {
+          alert("❌ Oops! Something went wrong. Please try again.");
+        }
+      }
+    });
+  </script>
+
+  <!-- Header / Navbar -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Manna Bible Church Logo">
+      <h1>Manna Bible Church - Likoni</h1>
+    </a>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="sermons.php">Sermons</a></li>
+        <li><a href="events.php">Events</a></li>
+        <li><a href="gallery.php">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="hero" style="background: url('assets/images/contact-bg.webp') no-repeat center/cover;">
+    <div class="overlay"></div>
+    <div class="hero-text">
+      <h2>Contact Manna Bible Church</h2>
+      <p>We’d love to hear from you — reach out for prayer, support, or more information.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info and Form -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info-box">
+        <h3>Get in Touch</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Likoni, Mombasa, Kenya</p>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:mannabc56076@gmail.com">mannabc56076@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+254717907594">+254 717 907594</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254717907594" target="_blank">WhatsApp</a></p>
+
+        <div class="social-icons" style="margin-top: 15px;">
+          <a href="https://www.facebook.com/share/16YwfMuJMT/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://youtube.com/@dalmasnzai2746?si=pbBVOrkEGIsOZNfR" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-box">
+        <h3>Send Us a Message</h3>
+        <form action="send_message.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <h2>Visit Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7959.293229448197!2d39.6580617!3d-4.092138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184013566a34d4f5%3A0xc1708e25f6cd2f73!2sManna%20Bible%20Church!5e0!3m2!1sen!2ske!4v1757746259543!5m2!1sen!2ske"
+      width="100%" height="400" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="mst.html">MST</a></li>
+          <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+        </ul>
+      </div>
+
+      <div class="contact-info">
+        <h4>Contact</h4>
+        <p><i class="fa-solid fa-envelope"></i> <a href="mailto:mannabc56076@gmail.com">mannabc56076@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:+254717907594">+254 717 907594</a></p>
+        <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/254717907594" target="_blank">WhatsApp</a></p>
+      </div>
+
+      <div class="socials">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16YwfMuJMT/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com/@dalmasnzai2746?si=pbBVOrkEGIsOZNfR" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Manna Bible Church (MBC). All Rights Reserved.</p>
+      <p>Created by <a href="https://www.facebook.com/share/1DKm1beyDE/" target="_blank">Dennis Mwero</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
